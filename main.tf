@@ -9,6 +9,8 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
+  shared_credentials_file = "/home/ubuntu/.aws/credentials"
+  profile = "testing"
   region = "us-east-1"
 }
 
